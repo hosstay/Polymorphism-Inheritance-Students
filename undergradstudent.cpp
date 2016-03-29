@@ -39,5 +39,5 @@ void UndergradStudent::add_class(std::string enrolled)
 
 void UndergradStudent::print(void) const
 {
-	std::cout<<"Undergrad Student "<<Student::name()<<" is currently enrolled in "<<m_class.size()<<"courses.\n";
+	std::cout<<"Undergrad Student "<<Student::name()<<" is currently enrolled in "<<m_class.size()<<" courses.\n";
 }

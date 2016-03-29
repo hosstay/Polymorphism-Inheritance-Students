@@ -23,5 +23,5 @@ Student::~Student()
 
 void Student::print(void) const
 {
-	std::cout<<"Student "<<m_name<<"/n";
+	std::cout<<"Student "<<m_name<<"\n";
 }

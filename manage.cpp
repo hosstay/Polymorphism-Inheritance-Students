@@ -34,6 +34,11 @@
 	#include <string>
 #endif /* STRING_ */
 
+#ifndef VECTOR_
+#define VECTOR_
+	#include <vector>
+#endif /* VECTOR_ */
+
 int main(void)
 {
 
@@ -45,7 +50,7 @@ int main(void)
 	u->add_class("Operating Systems");
 	u->add_class("Algorithms");
 
-	std::vector<*Student> list;
+	std::vector<Student*> list;
 	list.push_back(s);
 	list.push_back(u);
 	list.push_back(g);
@@ -55,21 +60,8 @@ int main(void)
 		list.at(i)->print();
 	}
 
-	//graduate student test cases using pointer
-	std::cout << "Graduate student Test:\n";
-	GradStudent *Gstudent = new GradStudent ("Danny", "Artificial Intelligence");
-	std::cout << "\nResearch area when created:\n";
-	std::cout << Gstudent->research_area();
-	Gstudent->set_research_area("Cyber Security");
-	std::cout << "\n\nResearch area after change:\n";
-	std::cout << Gstudent->research_area();
-	std::cout << "\n\nStudent name before change:\n";
-	std::cout << Gstudent->name();
-	Gstudent->set_name("Derek");
-	std::cout << "\n\nStudent name after change:\n";
-	std::cout << Gstudent->name();
-
-	delete Gstudent;
-
+	delete s;
+	delete u;
+	delete g;
 
 }
